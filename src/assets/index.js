@@ -18,6 +18,8 @@ import star from './star.jpg';
 import vector1 from './vector1.avif';
 import vector2 from './vector2.avif';
 import vector3 from './vector3.avif';
+import p012 from './p012.jpg';
+import connect from './connect.jpg';
 
 export {
   card5,
@@ -40,4 +42,6 @@ export {
   vector1,
   vector2,
   vector3,
+  p012,
+  connect,
 };

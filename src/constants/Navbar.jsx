@@ -8,7 +8,7 @@ const Navbar = () => {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   return (
-    <nav className="fixed inset-x-0 top-0 z-50   flex justify-between  border-b bg-white   items-start w-full mx-auto py-4 ">
+    <nav className="fixed inset-x-0 top-0 z-50   flex justify-between    items-start w-full mx-auto py-4 header bg-blue/10 mb-0">
       <div className="flex  gap-6 md:py-4 mx-4">
         <Link to="/">
           {' '}

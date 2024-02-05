@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Exhibition = () => {
+const Testimonial = () => {
   return (
-    <div className="container  mx-auto md:px-6 md:py-24 bg-dimBlue">
-      <section className="mb-32 text-center">
+    <div className="container  mx-auto md:px-6 bg-dimBlue">
+      <div className="mb-32 text-center">
         <h2 className="mb-12 text-3xl font-bold text-white">
-          Moticket Agent App
+          Flexible, Secured Payments
         </h2>
 
         <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
@@ -51,9 +51,9 @@ const Exhibition = () => {
             </h6>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
 
-export default Exhibition;
+export default Testimonial;

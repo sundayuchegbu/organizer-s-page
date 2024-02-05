@@ -7,9 +7,9 @@ import LeftLayer from '../constants/LeftLayer';
 const Reward = () => {
   return (
     <>
-      <section className="flex md:flex-row flex-col md:py-16 py-6 lg:mt-[100px] md:mt-[80px] items-center justify-center">
-        <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto">
-          <div className=" flex flex-col">
+      <section className="flex md:flex-row flex-col md:py-32  py-6  md:-mt-[130px] items-center justify-center bg-dimBlue">
+        <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto bg-white ">
+          <div className=" flex flex-col ">
             <h1 className="font-bold text-2xl font mt-24 text-center">
               Reward Every Event Journey
             </h1>
@@ -25,7 +25,7 @@ const Reward = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto">
+        <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto bg-white">
           <div className=" flex flex-col">
             <h1 className="font-bold text-2xl font mt-24 text-center">
               Reward Every Event Journey
@@ -43,8 +43,6 @@ const Reward = () => {
           </div>
         </div>
       </section>
-      <LeftLayer />
-      <RightLayer />
     </>
   );
 };

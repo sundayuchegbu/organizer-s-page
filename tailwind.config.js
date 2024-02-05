@@ -18,15 +18,19 @@ module.exports = {
         gray3: '#828282',
         gray4: '#bdbdbd',
         gray5: '#e0e0e0',
-        background: '#ffffff',
+        black3: 'rgba(0, 0, 0, 1)',
         dark: '#000000',
         dimWhite: 'rgba(255, 255, 255, 0.7)',
-        dimBlue: 'rgba(9, 151, 124, 0.1)',
+        dimBlue: '#0A0D36',
         grey: '#E0E0E0',
         blue: '#096df3',
         bluebg: '#90cdf4',
         active: '#c10006',
         faded: '#d3494e',
+        navyblue: 'rgba(0, 0, 0, 0.25)', // Add navyblue color with background properties
+      },
+      backdropFilter: {
+        3.5: 'blur(3.5px)',
       },
       fontFamily: {
         opensans: ['Open Sans', 'sans-serif'],
