@@ -1,6 +1,19 @@
 import { BiSolidDollarCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import { connect, p012, star } from './assets';
+import {
+  live,
+  f10,
+  f11,
+  f9,
+  p012,
+  star,
+  star1,
+  verify1,
+  verify2,
+  verify3,
+} from './assets';
+import { FaMailBulk } from 'react-icons/fa';
+
 // import Navbar from './constants/Navbar';
 
 function App() {
@@ -39,9 +52,9 @@ function App() {
               </Link>
 
               <Link
-                to="/"
+                to="mailto:help@motickets.co.uk"
                 target="_blank"
-                className="inline-flex items-center justify-center  w-full px-5 py-3 text-sm font-medium text-center bg-white border border-red-700 text-red-700 rounded-full sm:w-auto focus:ring-4 dark:hover:bg-red-700 hover:text-white "
+                className="inline-flex items-center justify-center  w-full px-5 py-3 text-sm font-medium text-center text-white bg-[#0A0D36] border  rounded-full sm:w-auto focus:ring-4  hover:text-white "
               >
                 Request Demo{' '}
               </Link>
@@ -50,8 +63,9 @@ function App() {
 
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img
-              src="https://demo.themesberg.com/landwind/images/hero.png"
-              alt="hero image"
+              src={live}
+              alt="hero "
+              className="w-full h-full rounded-[50px] border-[#000000] border-8"
             />
           </div>
         </div>
@@ -113,8 +127,9 @@ function App() {
                   leading-[30.8px]
                   text-xl                  "
                 >
-                  Create unlimited ticket types and customise ticket allocation
-                  to match your needs
+                  Offer unlimited ticket varieties and tailor allocations to
+                  match your event's demands. Seamlessly reserve seating and
+                  design plans for a smooth attendee journey.
                 </p>
 
                 <div></div>
@@ -155,10 +170,9 @@ function App() {
                 
                   "
                 >
-                  Whether you opt for customer-covered fees to generate
-                  additional revenue or choose to balance internal costs, our
-                  platform empowers you to tailor fee structures that align with
-                  your objectives
+                  Choose whether to charge customer-covered fees for extra
+                  revenue or cover the cost yourself. Our platform lets you
+                  customise fee structures to match your goals.
                 </p>
               </div>
             </div>
@@ -183,11 +197,12 @@ function App() {
                 {/* <span className="text-primary font-semibold text-lg block mb-4">
                 Professional
               </span> */}
-                <img
+                {/* <img
                   src={connect}
                   alt="connect"
                   className="w-24 h-24 rounded-full"
-                />
+                /> */}
+                <FaMailBulk className="w-24 h-24" />
                 <h2 className="font-bold text-dark mb-5 md:text-[42px] text-[32px]">
                   Automated Communication
                 </h2>
@@ -200,9 +215,9 @@ function App() {
                   text-xl
                   "
                 >
-                  This enables organizers to send personalize emails, including
+                  This enables organisers to send personalize emails, including
                   confirmations, updates, and post-events surveys to attendees,
-                  boosting engagement
+                  boosting engagement.
                 </p>
               </div>
             </div>
@@ -220,42 +235,49 @@ function App() {
             <div className="mb-12 md:mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={f11}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="f11"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">
-                Indentification
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Flexible Payment Choices
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+                Customers can choose from various card types and use Google Pay,
+                Apple Pay, and Paypal for payments.
               </h6>
             </div>
             <div className="mb-12 md:mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={f9}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="f9"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">Validation</h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Secured Payments
+              </h5>
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+                We've partnered with Stripe for secure payment processing,
+                ensuring confidential and security at every step.
               </h6>
             </div>
             <div className="mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={f10}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="f10"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">Selling</h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Effortless Checkout Options
+              </h5>
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+                One-Click for Returning Customers, Guest Checkout for
+                First-Timers.
               </h6>
             </div>
           </div>
@@ -266,35 +288,33 @@ function App() {
       <section className="flex md:flex-row flex-col md:py-16  py-6  md:-mt-[130px] items-center justify-center bg-[#0A0D36]">
         <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto bg-white ">
           <div className=" flex flex-col ">
-            <h1 className="font-bold text-2xl font mt-24 text-center">
+            <h1 className="font-bold text-3xl font mt-12 mb-8 text-center">
               Reward Every Event Journey
             </h1>
-            <p className=" leading-[30.8px] text-center">
+            <p className=" leading-[30.8px] text-center ">
               Elevate your event with our exclusive
               <br /> loyalty reward
               <br /> program! Delight ticket buyers with perks for frequent
               purchases, event attendance,
-              <br /> and, and active community engagement
+              <br /> and, and active community engagement.
             </p>
             <div className="flex items-center justify-center mt-12">
-              <img src={star} className="w-24 h-24 " />
+              <img src={star1} className="w-56 h-56 " alt="star1" />
             </div>
           </div>
         </div>
         <div className="flex justify-center  border-4 border-gray-600 rounded-[50px] w-[350px] ml-12 h-[500px] mx-uto bg-white">
           <div className=" flex flex-col">
-            <h1 className="font-bold text-2xl font mt-24 text-center">
-              Reward Every Event Journey
+            <h1 className="font-bold text-3xl font mt-12 mb-8 text-center">
+              Data-Driven Events
             </h1>
-            <p className=" leading-[30.8px] text-center">
-              Elevate your event with our exclusive
-              <br /> loyalty reward
-              <br /> program! Delight ticket buyers with perks for frequent
-              purchases, event attendance,
-              <br /> and, and active community engagement
+            <p className=" leading-[30.8px]  w-[250px] text-justify">
+              Dive into attendance, retention, and engagement effortlessly. Our
+              platform provides comprehensive analytics to enhance every aspect
+              of your events and foster community growth.
             </p>
             <div className="flex items-center justify-center mt-12">
-              <img src={star} className="w-24 h-24 " />
+              <img src={star} className="w-24 h-24 " alt="star" />
             </div>
           </div>
         </div>
@@ -312,39 +332,43 @@ function App() {
             <div className="mb-12 md:mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={verify1}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="verify"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">
-                Indentification
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Ticket Holder Verification
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+                Never struggle with scanning tickets again! Easily verify ticket
+                holders using their phone number
               </h6>
             </div>
             <div className="mb-12 md:mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={verify2}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="verify2"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">Validation</h5>
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Ticket Validation
+              </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+                Effortless Check-In Guests at Events Using Our Agent App
               </h6>
             </div>
             <div className="mb-0">
               <div className="mb-6 flex justify-center">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-                  className="w-32 rounded-full shadow-lg dark:shadow-black/20"
+                  src={verify3}
+                  className="w-32 h-32 rounded-full shadow-lg dark:shadow-black/20"
+                  alt="verify3"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-white">Selling</h5>
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">Selling</h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400">
                 There is just enough space here for several lines of text. Use
                 it well.
@@ -366,7 +390,7 @@ function App() {
               <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-white">
                 <div className="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
                   <p className="mb-4 text-sm uppercase">
-                    <strong>Free Events</strong>
+                    <strong>Basic (Free Events)</strong>
                   </p>
                   <h3 className="mb-6 text-3xl">
                     <strong>Free *</strong>
@@ -374,7 +398,7 @@ function App() {
 
                   <button
                     type="button"
-                    className="inline-block w-full rounded bg-[#25aae1] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                    className="inline-block w-full rounded bg-[#c10006] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -398,7 +422,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Unlimited updates
+                      No charge for up to 100 sold tickets.
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -415,7 +439,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Git repository
+                      £0.39 fee per free ticket beyond 100 ticket
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -432,7 +456,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      npm installation
+                      Customer Support
                     </li>
                   </ol>
                 </div>
@@ -443,14 +467,15 @@ function App() {
               <div className="block h-full rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-white">
                 <div className="border-b-2 border-neutral-100 border-opacity-100 p-6 text-center dark:border-opacity-10">
                   <p className="mb-4 text-sm uppercase text-black">
-                    <strong>Paid Events</strong>
+                    <strong>Standard (Paid Events)</strong>
                   </p>
                   <h3 className="mb-6 text-3xl">
-                    <strong classNameName="text-black">£ 299</strong>
+                    <strong classNameName="text-black">5% +0.49</strong>
+                    <small>/Ticket</small>
                   </h3>
                   <button
                     type="button"
-                    className="inline-block w-full rounded bg-[#25aae1] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                    className="inline-block w-full rounded bg-[#c10006] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -474,24 +499,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Unlimited updates
-                    </li>
-                    <li className="mb-4 flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5 text-[25aae1] dark:text-primary-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
-                      Git repository
+                      Audience Analytics
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -508,7 +516,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      npm installation
+                      Unlimited Ticket Types
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -525,7 +533,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Code examples
+                      Customer Support
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -542,7 +550,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Premium snippets
+                      Access to Agent App
                     </li>
                   </ol>
                 </div>
@@ -556,16 +564,18 @@ function App() {
                     <strong>Enterprise</strong>
                   </p>
                   <h3 className="mb-6 text-3xl">
-                    <strong>£ 499</strong>
+                    <strong>Large & Complex Events</strong>
                   </h3>
-                  <button
-                    type="button"
-                    className="inline-block w-full rounded bg-[#25aae1] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-                    data-te-ripple-init
-                    data-te-ripple-color="light"
-                  >
-                    Get Started
-                  </button>
+                  <Link to="mailto:help@motickets.co.us">
+                    <button
+                      type="button"
+                      className="inline-block w-full rounded bg-[#c10006] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                      data-te-ripple-init
+                      data-te-ripple-color="light"
+                    >
+                      Contact Us
+                    </button>
+                  </Link>
                 </div>
                 <div className="p-6">
                   <ol className="list-inside">
@@ -584,7 +594,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Unlimited updates
+                      Get Asisted in Planning your Event.
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -601,7 +611,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Git repository
+                      Prizes Tailored to your needs.
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -618,7 +628,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      npm installation
+                      Standard Features
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -635,7 +645,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Code examples
+                      Premium Support
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -652,7 +662,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Premium snippets
+                      Dedicated Account Manager
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -669,7 +679,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Premium support
+                      Access to Agent App
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -686,7 +696,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Drag&amp;Drop builder
+                      Unlimited Ticket Types
                     </li>
                   </ol>
                 </div>

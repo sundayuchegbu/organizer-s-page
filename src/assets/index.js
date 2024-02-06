@@ -20,6 +20,15 @@ import vector2 from './vector2.avif';
 import vector3 from './vector3.avif';
 import p012 from './p012.jpg';
 import connect from './connect.jpg';
+import f11 from './f11.png';
+import f9 from './f9.png';
+import f10 from './f10.png';
+import star1 from './star1.png';
+import live from './live.jpg';
+import banner1 from './banner1.png';
+import verify1 from './verify1.png';
+import verify2 from './verify2.png';
+import verify3 from './verify3.png';
 
 export {
   card5,
@@ -44,4 +53,13 @@ export {
   vector3,
   p012,
   connect,
+  f11,
+  f9,
+  f10,
+  star1,
+  banner1,
+  live,
+  verify1,
+  verify2,
+  verify3,
 };

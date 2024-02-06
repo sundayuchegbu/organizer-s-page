@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Banner = () => {
   return (
     <section
-      className="bg-black/90 blur-3.5"
+      className="bg-black/90 "
       style={{
         backgroundImage: `url('https://res.cloudinary.com/djhz5a2ba/image/upload/v1706870766/f2ugvbcviq7bxwirmiek.png')`,
         backgroundSize: 'cover',
