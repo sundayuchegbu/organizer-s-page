@@ -18,18 +18,18 @@ import { FaMailBulk } from 'react-icons/fa';
 
 function App() {
   return (
-    <div className="App  blur-3.5">
+    <div className=" blur-3.5">
       {/* <Navbar /> */}
       {/* Banner section */}
       <section
-        className="bg-[#0A0D36]"
+        className="bg-[#0A0D36] lg:h-[721px]"
         style={{
           backgroundImage: `url('https://res.cloudinary.com/djhz5a2ba/image/upload/v1706870766/f2ugvbcviq7bxwirmiek.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
       >
-        <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+        <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-44 ">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
               Event Success <br />
@@ -37,9 +37,10 @@ function App() {
             </h1>
 
             <p className="max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl dark:text-white">
-              Effortless event ticketing and <br /> community bulding come
-              together in in a seamless event <br />
-              management platform to create and the memorable events
+              Effortless event ticketing and community bulding come
+              <br />
+              together in in a seamless event management platform
+              <br /> to create and the memorable events
             </p>
 
             <b className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
@@ -231,7 +232,7 @@ function App() {
             Flexible, Secured Payments
           </h2>
 
-          <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+          <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12 container">
             <div className="mb-12 md:mb-0">
               <div className="mb-6 flex justify-center">
                 <img
@@ -243,7 +244,7 @@ function App() {
               <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
                 Flexible Payment Choices
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
                 Customers can choose from various card types and use Google Pay,
                 Apple Pay, and Paypal for payments.
               </h6>
@@ -259,7 +260,7 @@ function App() {
               <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
                 Secured Payments
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
                 We've partnered with Stripe for secure payment processing,
                 ensuring confidential and security at every step.
               </h6>
@@ -275,7 +276,7 @@ function App() {
               <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
                 Effortless Checkout Options
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
                 One-Click for Returning Customers, Guest Checkout for
                 First-Timers.
               </h6>
@@ -299,7 +300,7 @@ function App() {
               <br /> and, and active community engagement.
             </p>
             <div className="flex items-center justify-center mt-12">
-              <img src={star1} className="w-56 h-56 " alt="star1" />
+              <img src={star1} className="w-24 h-24 " alt="star1" />
             </div>
           </div>
         </div>
@@ -340,9 +341,9 @@ function App() {
               <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
                 Ticket Holder Verification
               </h5>
-              <h6 className="mb-4 font-medium text-white dark:text-primary-400 text-justify">
+              <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
                 Never struggle with scanning tickets again! Easily verify ticket
-                holders using their phone number
+                holders using their phone number.
               </h6>
             </div>
             <div className="mb-12 md:mb-0">
@@ -368,10 +369,11 @@ function App() {
                   alt="verify3"
                 />
               </div>
-              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">Selling</h5>
+              <h5 className="mb-2 text-lg font-bold text-[#25aae1]">
+                Door Sale Made Simple
+              </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                There is just enough space here for several lines of text. Use
-                it well.
+                Use Our Agent App to Sell Tickets On-Site with ease
               </h6>
             </div>
           </div>
@@ -405,6 +407,7 @@ function App() {
                     Get Started
                   </button>
                 </div>
+                <h6 className="p-6 font-semibold">What's included:</h6>
                 <div className="p-6">
                   <ol className="list-inside">
                     <li className="mb-4 flex">
@@ -470,7 +473,7 @@ function App() {
                     <strong>Standard (Paid Events)</strong>
                   </p>
                   <h3 className="mb-6 text-3xl">
-                    <strong classNameName="text-black">5% +0.49</strong>
+                    <strong classNameName="text-black">5% +£0.49</strong>
                     <small>/Ticket</small>
                   </h3>
                   <button
@@ -482,6 +485,7 @@ function App() {
                     Get Started
                   </button>
                 </div>
+                <h6 className="p-6 font-semibold">All free features plus:</h6>
                 <div className="p-6">
                   <ol className="list-inside">
                     <li className="mb-4 flex">
@@ -518,23 +522,7 @@ function App() {
                       </svg>
                       Unlimited Ticket Types
                     </li>
-                    <li className="mb-4 flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5 text-[#25aae1] dark:text-primary-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
-                      Customer Support
-                    </li>
+
                     <li className="mb-4 flex">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -564,7 +552,8 @@ function App() {
                     <strong>Enterprise</strong>
                   </p>
                   <h3 className="mb-6 text-3xl">
-                    <strong>Large & Complex Events</strong>
+                    {/* <strong>Large & Complex Events</strong> */}
+                    <strong>Custom Prizes</strong>
                   </h3>
                   <Link to="mailto:help@motickets.co.us">
                     <button
@@ -577,6 +566,9 @@ function App() {
                     </button>
                   </Link>
                 </div>
+                <h6 className="p-6 font-semibold">
+                  All standard features plus:
+                </h6>
                 <div className="p-6">
                   <ol className="list-inside">
                     <li className="mb-4 flex">
@@ -663,40 +655,6 @@ function App() {
                         />
                       </svg>
                       Dedicated Account Manager
-                    </li>
-                    <li className="mb-4 flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5 text-[#25aae1] dark:text-primary-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
-                      Access to Agent App
-                    </li>
-                    <li className="mb-4 flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="2"
-                        stroke="currentColor"
-                        className="mr-3 h-5 w-5 text-[#25aae1] dark:text-primary-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M4.5 12.75l6 6 9-13.5"
-                        />
-                      </svg>
-                      Unlimited Ticket Types
                     </li>
                   </ol>
                 </div>
