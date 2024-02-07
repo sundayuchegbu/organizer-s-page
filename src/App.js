@@ -553,7 +553,7 @@ function App() {
                   </p>
                   <h3 className="mb-6 text-3xl">
                     {/* <strong>Large & Complex Events</strong> */}
-                    <strong>Custom Prizes</strong>
+                    <strong>Custom Prices</strong>
                   </h3>
                   <Link to="mailto:help@motickets.co.us">
                     <button
@@ -603,7 +603,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Prizes Tailored to your needs.
+                      Prices Tailored to your needs.
                     </li>
                     <li className="mb-4 flex">
                       <svg
