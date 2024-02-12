@@ -300,7 +300,7 @@ function App() {
               <br /> and, and active community engagement.
             </p>
             <div className="flex items-center justify-center mt-12">
-              <img src={star1} className="w-12 h-12 " alt="star1" />
+              <img src={star1} className=" w-[50px] h-[50px] " alt="star1" />
             </div>
           </div>
         </div>
