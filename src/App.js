@@ -39,8 +39,8 @@ function App() {
             <p className="max-w-2xl mb-6 font-normal text-white lg:mb-8 md:text-lg lg:text-xl dark:text-white">
               Effortless event ticketing and community bulding come
               <br />
-              together in in a seamless event management platform
-              <br /> to create and the memorable events
+              together in a seamless event management platform
+              <br /> to create memorable events
             </p>
 
             <b className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
@@ -277,8 +277,8 @@ function App() {
                 Effortless Checkout Options
               </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
-                One-Click for Returning Customers, Guest Checkout for
-                First-Timers.
+                One-Click for returning customers, guest checkout for
+                first-timers.
               </h6>
             </div>
           </div>
@@ -292,7 +292,7 @@ function App() {
             <h1 className="font-bold text-3xl font mt-12 mb-8 text-center">
               Reward Every Event Journey
             </h1>
-            <p className=" leading-[30.8px] text-center ">
+            <p className=" leading-[30.8px] text-justify px-8">
               Elevate your event with our exclusive
               <br /> loyalty reward
               <br /> program! Delight ticket buyers with perks for frequent
@@ -300,7 +300,7 @@ function App() {
               <br /> and, and active community engagement.
             </p>
             <div className="flex items-center justify-center mt-12">
-              <img src={star1} className="w-24 h-24 " alt="star1" />
+              <img src={star1} className="w-12 h-12 " alt="star1" />
             </div>
           </div>
         </div>
@@ -323,10 +323,10 @@ function App() {
 
       {/* Exhibition */}
 
-      <div className="container  mx-auto md:px-6 md:py-24 bg-[#0A0D36]">
+      <div className="container  mx-auto md:px-6 md:py-24 bg-[#0A0D36] mb-4 ">
         <section className="mb-32 text-center">
           <h2 className="mb-12 text-3xl font-bold text-white">
-            Moticket Agent App
+            MoTicket Agent App
           </h2>
 
           <div className="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
@@ -343,7 +343,7 @@ function App() {
               </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400 ">
                 Never struggle with scanning tickets again! Easily verify ticket
-                holders using their phone number.
+                holders using their phone number or email address.
               </h6>
             </div>
             <div className="mb-12 md:mb-0">
@@ -358,7 +358,7 @@ function App() {
                 Ticket Validation
               </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                Effortless Check-In Guests at Events Using Our Agent App
+                Effortlessly check-in guests at events using our Agent App.
               </h6>
             </div>
             <div className="mb-0">
@@ -373,11 +373,38 @@ function App() {
                 Door Sale Made Simple
               </h5>
               <h6 className="mb-4 font-medium text-white dark:text-primary-400">
-                Use Our Agent App to Sell Tickets On-Site with ease
+                Use our Agent App to sell tickets on-site with ease
               </h6>
             </div>
           </div>
         </section>
+        <div class="container mx-auto flex flex-col justify-around p-4 text-center  lg:flex-row">
+          <div class="flex flex-col justify-center lg:text-left">
+            <h1 class="py-2 text-3xl font-medium leadi title-font text-white">
+              Download the MoTicket Agent App here
+            </h1>
+          </div>
+          <div class="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
+            <Link
+              to="https://play.google.com/store/apps/details?id=com.avantecs.moloyal&hl=en&gl=US"
+              target="_blank"
+            >
+              <button class="inline-flex items-center px-6 py-3 rounded-lg dark:bg-[#25aae1] dark:text-gray-900 mb-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="fill-current w-7 h-7 dark:text-gray-900"
+                >
+                  <path d="M 5.4160156 2.328125 L 12.935547 10.158203 C 13.132547 10.363203 13.45925 10.363203 13.65625 10.158203 L 15.179688 8.5742188 C 15.405688 8.3392188 15.354312 7.956875 15.070312 7.796875 C 11.137313 5.571875 6.2620156 2.811125 5.4160156 2.328125 z M 3.140625 2.8476562 C 3.055625 3.0456562 3 3.2629063 3 3.5039062 L 3 20.591797 C 3 20.788797 3.044375 20.970625 3.109375 21.140625 L 11.576172 12.324219 C 11.762172 12.131219 11.762172 11.826813 11.576172 11.632812 L 3.140625 2.8476562 z M 17.443359 9.2578125 C 17.335484 9.2729375 17.233297 9.32375 17.154297 9.40625 L 15.015625 11.632812 C 14.829625 11.825812 14.829625 12.130219 15.015625 12.324219 L 17.134766 14.529297 C 17.292766 14.694297 17.546141 14.729188 17.744141 14.617188 C 19.227141 13.777188 20.226563 13.212891 20.226562 13.212891 C 20.725562 12.909891 21.007 12.443547 21 11.935547 C 20.992 11.439547 20.702609 10.981938 20.224609 10.710938 C 20.163609 10.676937 19.187672 10.124359 17.763672 9.3183594 C 17.664172 9.2623594 17.551234 9.2426875 17.443359 9.2578125 z M 13.296875 13.644531 C 13.165875 13.644531 13.034047 13.696328 12.935547 13.798828 L 5.4746094 21.566406 C 6.7566094 20.837406 11.328781 18.249578 15.050781 16.142578 C 15.334781 15.981578 15.386156 15.599281 15.160156 15.363281 L 13.65625 13.798828 C 13.55775 13.696328 13.427875 13.644531 13.296875 13.644531 z"></path>
+                </svg>
+                <span class="flex flex-col items-start ml-4 leadi">
+                  <span class="mb-1 text-xs">GET IT ON</span>
+                  <span class="font-semibold title-font">Google Play</span>
+                </span>
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
 
       {/* Pricing */}
@@ -425,7 +452,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      No charge for up to 100 sold tickets.
+                      No charge for up to 100 free tickets.
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -442,7 +469,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      £0.39 fee per free ticket beyond 100 ticket
+                      £0.39 fee per free ticket after 100 tickets.
                     </li>
                     <li className="mb-4 flex">
                       <svg
@@ -485,7 +512,7 @@ function App() {
                     Get Started
                   </button>
                 </div>
-                <h6 className="p-6 font-semibold">All free features plus:</h6>
+                <h6 className="p-6 font-semibold">What's included:</h6>
                 <div className="p-6">
                   <ol className="list-inside">
                     <li className="mb-4 flex">
@@ -555,7 +582,7 @@ function App() {
                     {/* <strong>Large & Complex Events</strong> */}
                     <strong>Custom Prices</strong>
                   </h3>
-                  <Link to="mailto:help@motickets.co.us">
+                  <Link to="mailto:help@motickets.co.uk">
                     <button
                       type="button"
                       className="inline-block w-full rounded bg-[#c10006] px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
@@ -566,9 +593,7 @@ function App() {
                     </button>
                   </Link>
                 </div>
-                <h6 className="p-6 font-semibold">
-                  All standard features plus:
-                </h6>
+                <h6 className="p-6 font-semibold">What's included:</h6>
                 <div className="p-6">
                   <ol className="list-inside">
                     <li className="mb-4 flex">
@@ -586,7 +611,7 @@ function App() {
                           d="M4.5 12.75l6 6 9-13.5"
                         />
                       </svg>
-                      Get Asisted in Planning your Event.
+                      Get Asistance in Planning your Event.
                     </li>
                     <li className="mb-4 flex">
                       <svg
