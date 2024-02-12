@@ -381,7 +381,7 @@ function App() {
         <div class="container mx-auto flex flex-col justify-around p-4 text-center  lg:flex-row">
           <div class="flex flex-col justify-center lg:text-left">
             <h1 class="py-2 text-3xl font-medium leadi title-font text-white">
-              Download the MoTicket Agent App here
+              Download the Moloyal Agent App here
             </h1>
           </div>
           <div class="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
